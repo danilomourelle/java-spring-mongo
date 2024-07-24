@@ -42,7 +42,7 @@ public class Instantiation implements CommandLineRunner {
 
     Post post2 = new Post(
         null,
-        Instant.parse("2001-12-28T13:45:00.000Z"),
+        Instant.parse("2024-07-22T12:00:00.000Z"),
         "Bom dia",
         "Acordei feliz hoje!",
         new AuthorDTO(maria));
@@ -59,7 +59,7 @@ public class Instantiation implements CommandLineRunner {
 
     CommentDTO c3 = new CommentDTO(
         "Tenha um ótimo dia!",
-        Instant.parse("2001-12-28T14:45:00.000Z"),
+        Instant.parse("2024-07-22T14:45:00.000Z"),
         new AuthorDTO(alex));
 
     post1.getComments().addAll(Arrays.asList(c1, c2));

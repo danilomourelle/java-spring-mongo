@@ -1,5 +1,6 @@
 package com.danmou.course.services;
 
+import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
 
@@ -28,5 +29,9 @@ public class PostService {
 
   public List<Post> findByTitle(String text) {
     return repository.findByTitle(text);
+  }
+
+  public List<Post> fullSearch(String text, Instant minDate, Instant maxDate) {
+    return repository.fullSearch(text, minDate, maxDate);
   }
 }
